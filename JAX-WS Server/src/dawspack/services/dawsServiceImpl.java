@@ -25,7 +25,7 @@ public class dawsServiceImpl implements dawsService {
 	@Override
 	public List<Product> getProducts() {
 		System.out.println("[!] getProducts method has been invoked");
-		
+		products.clear();
 		ResultSet data;
 		try {
 			data = DB.query("SELECT * FROM products");
