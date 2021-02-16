@@ -7,29 +7,25 @@
 </p>
 
 
-L'objectif de ce TP est d'apprendre à manipuler l'API JAX-WS et l'aproche (SOAP) pour le développement de services web étendus à partir de la plateforme de développement Java.
+The objective of this lab is to learn how to handle the JAX-WS API and the (SOAP) approach for the development of extended web services from the Java development platform.
 
-  
-Le TP est fourni avec trois dossier parent :
+The TP comes with three parent folders:
 
-- JAX-WS Server: Contient L'API ainsi la connection a la base de donneé MySQL grace a JDBC.
+- JAX-WS Server: Contains the API as well as the connection to the MySQL database thanks to JDBC.
 
-- JAX-WS Client: Continet la partie client qui permet d'interagir avec le server.
+- JAX-WS Client: Continet the client part which allows to interact with the server.
 
-- SOAP-UI: une sauvgarde de soap-ui qui permet de tester les endpoint.
+- SOAP-UI: a backup of soap-ui that allows endpoint testing.
 
-  
-
-**Buts pédagogiques** : transformation d'un POJO (Plain old Java object) en service web, génération des artifacts à partir d'une description WSDL, utilisation de l'outillage fourni depuis JavaSE 6, mise en place d'un intercepteur (handler), clients service web en mode asynchrone, outils **wsimport**.
+**Educational goals**: transformation of a POJO (Plain old Java object) into a web service, generation of artifacts from a WSDL description, use of the tools provided since JavaSE 6, implementation of an interceptor (handler), web service clients in asynchronous mode, **wsimport** tools.
 
   
 
-## Prérequis logiciels
+## Software prerequisites
 
   
 
-Avant de démarrer ce TP JAX-WS, veuillez préparer votre environnement de développement en installant les outils suivants :
-
+Before starting this JAX-WS lab, please prepare your development environment by installing the following tools:
   
 
 *  [Java via OpenJDK](https://jdk.java.net/  "Java 8+")
@@ -42,53 +38,19 @@ Avant de démarrer ce TP JAX-WS, veuillez préparer votre environnement de déve
 
   
 
-Etape a suivre:
+Step to follow:
 
   
 
-* Creation d'une base de donneé [ex:'DAWS']
+* Creation of a database [ex: 'DAWS']
 
-* Creation d'une table [Product]
+* Creation of a [Product] table
 
-* Modifier les coordonnés 'user','password','database' sur le fichier ***materialServiceImpl.java***
+* Modify the coordinates 'user', 'password', 'database' on the file *** materialServiceImpl.java ***
 
-    Connection DB = new Connection(**username**,**password**,**database_name**);
-
-  
-  
-
-> Ces exemples n'utilisent pas les modules Java (introduits depuis Java 9).
+     Connection DB = new Connection (** username **, ** password **, ** database_name **);
 
   
-
-## Ressources
-
   
 
-Pour aller plus loin, vous pouvez consulter les ressources suivantes :
-
-  
-
-*  [Support de cours SOA](https://mickael-baron.fr/soa/introduction-soa  "Support de cours SOA") ;
-
-*  [Support de cours WSDL](https://mickael-baron.fr/soa/decrire-configurer-wsdl  "Support de cours WSDL") ;
-
-*  [Support de cours SOAP](https://mickael-baron.fr/soa/communiquer-soap  "Support de cours SOAP") ;
-
-*  [Support de cours JAX-WS](https://mickael-baron.fr/soa/developper-serviceweb-jaxws  "Support de cours JAX-WS").
-
-*  [Support de cours REST](https://mickael-baron.fr/soa/comprendre-style-architecture-rest  "Support de cours REST") ;
-
-*  [Support de cours JAX-RS](https://mickael-baron.fr/soa/developper-serviceweb-rest-jaxrs  "Support de cours JAX-RS") ;
-
-*  [Support de cours sur le Streaming HTTP](https://mickael-baron.fr/soa/introduction-streaminghttp) ;
-
-*  [Support de cours sur la mise en œuvre de technologies de Streaming HTTP avec le langage Java](https://mickael-baron.fr/soa/streaminghttp-mise-en-oeuvre) ;
-
-*  [Support de cours sur une introduction aux architectures microservices](https://mickael-baron.fr/soa/introduction-microservices  "Support de cours sur une introduction aux architectures microservices") ;
-
-*  [Support de cours sur les outils et bibliothèques pour la mise en œuvre d'architectures microservices](https://mickael-baron.fr/soa/microservices-mise-en-oeuvre  "Support de cours sur les outils et bibliothèques pour la mise en œuvre d'architectures microservices").
-
-  
-
-Je tiens à remercier [Mme L . BAGDADI] pour les informations fournies ainsi le bon enseignement.
+> These examples do not use Java modules (introduced since Java 9).
